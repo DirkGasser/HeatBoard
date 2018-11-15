@@ -1,0 +1,574 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:j8headerDirk
+LIBS:HeatBoard-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Trafo5V TR1
+U 1 1 5BE892D8
+P 9850 5900
+F 0 "TR1" H 8700 4450 60  0000 C CNN
+F 1 "Trafo5V" H 8700 5750 60  0000 C CNN
+F 2 "RasperryLib:Trafo" H 9850 5900 60  0001 C CNN
+F 3 "" H 9850 5900 60  0001 C CNN
+	1    9850 5900
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector1x3 Co4
+U 1 1 5BE89353
+P 9150 6050
+F 0 "Co4" H 9150 5700 60  0000 C CNN
+F 1 "Connector1x3" H 9150 6350 60  0000 C CNN
+F 2 "RasperryLib:Connector1x3" H 9150 6050 60  0001 C CNN
+F 3 "" H 9150 6050 60  0001 C CNN
+	1    9150 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Relais RL1
+U 1 1 5BE8936C
+P 10500 4600
+F 0 "RL1" H 10500 4050 60  0000 C CNN
+F 1 "Relais" H 10450 5100 60  0000 C CNN
+F 2 "RasperryLib:Relais" H 10950 5100 60  0001 C CNN
+F 3 "" H 10950 5100 60  0001 C CNN
+	1    10500 4600
+	0    1    1    0   
+$EndComp
+$Comp
+L Diode D1
+U 1 1 5BE893D3
+P 10450 3750
+F 0 "D1" H 10450 3600 60  0000 C CNN
+F 1 "Diode" H 10450 3900 60  0000 C CNN
+F 2 "RasperryLib:Diode" H 10450 3750 60  0001 C CNN
+F 3 "" H 10450 3750 60  0001 C CNN
+	1    10450 3750
+	-1   0    0    1   
+$EndComp
+$Comp
+L BC337 Q1
+U 1 1 5BE89444
+P 10050 3200
+F 0 "Q1" H 10250 3275 50  0000 L CNN
+F 1 "BC337" H 10250 3200 50  0000 L CNN
+F 2 "RasperryLib:BC337" H 10250 3125 50  0001 L CIN
+F 3 "" H 10050 3200 50  0001 L CNN
+	1    10050 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Fuse F2
+U 1 1 5BE89477
+P 10100 5400
+F 0 "F2" V 10180 5400 50  0000 C CNN
+F 1 "Fuse" V 10025 5400 50  0000 C CNN
+F 2 "RasperryLib:Fuse" V 10030 5400 50  0001 C CNN
+F 3 "" H 10100 5400 50  0001 C CNN
+	1    10100 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Fuse F1
+U 1 1 5BE894B8
+P 8700 3850
+F 0 "F1" V 8780 3850 50  0000 C CNN
+F 1 "Fuse" V 8625 3850 50  0000 C CNN
+F 2 "RasperryLib:Fuse" V 8630 3850 50  0001 C CNN
+F 3 "" H 8700 3850 50  0001 C CNN
+	1    8700 3850
+	0    1    1    0   
+$EndComp
+$Comp
+L J8HeaderTurned J81
+U 1 1 5BE894DF
+P 3400 4750
+F 0 "J81" H 3450 3600 60  0000 C CNN
+F 1 "J8HeaderTurned" H 3450 5950 60  0000 C CNN
+F 2 "RasperryLib:RaspiConnectorTurned" H 4500 5450 60  0001 C CNN
+F 3 "" H 4500 5450 60  0001 C CNN
+	1    3400 4750
+	-1   0    0    1   
+$EndComp
+$Comp
+L J8Header J82
+U 1 1 5BE8950A
+P 5500 4800
+F 0 "J82" H 5700 3650 60  0000 C CNN
+F 1 "J8Header" H 5400 5950 60  0000 C CNN
+F 2 "RasperryLib:RaspiConnector" H 6450 5450 60  0001 C CNN
+F 3 "" H 6450 5450 60  0001 C CNN
+	1    5500 4800
+	1    0    0    -1  
+$EndComp
+Text Notes 6350 3950 3    60   ~ 0
+Used by 3.5 inch LCD
+$Comp
+L Conn_small1x3 Co2
+U 1 1 5BE8BABB
+P 6800 5950
+F 0 "Co2" H 6800 5700 60  0000 C CNN
+F 1 "DHT22" H 6800 6150 60  0000 C CNN
+F 2 "RasperryLib:Conn_Small1x3" H 6800 5950 60  0001 C CNN
+F 3 "" H 6800 5950 60  0001 C CNN
+	1    6800 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_small1x3 Co3
+U 1 1 5BE8BAE6
+P 7500 5950
+F 0 "Co3" H 7500 5700 60  0000 C CNN
+F 1 "Move Sensor" H 7500 6150 60  0000 C CNN
+F 2 "RasperryLib:Conn_Small1x3" H 7500 5950 60  0001 C CNN
+F 3 "" H 7500 5950 60  0001 C CNN
+	1    7500 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Resistor R2
+U 1 1 5BE8E5B2
+P 6800 5200
+F 0 "R2" H 6800 5100 60  0000 C CNN
+F 1 "10k" H 6800 5300 60  0000 C CNN
+F 2 "RasperryLib:Resistor" H 6800 5200 60  0001 C CNN
+F 3 "" H 6800 5200 60  0001 C CNN
+	1    6800 5200
+	0    1    1    0   
+$EndComp
+$Comp
+L Conn_small1x3 Co1
+U 1 1 5BE8F293
+P 4450 6500
+F 0 "Co1" H 4450 6250 60  0000 C CNN
+F 1 "DS18B20" H 4450 6650 60  0000 C CNN
+F 2 "RasperryLib:Conn_Small1x3" H 4450 6500 60  0001 C CNN
+F 3 "" H 4450 6500 60  0001 C CNN
+	1    4450 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Resistor R1
+U 1 1 5BE8F9F6
+P 4100 6150
+F 0 "R1" H 4100 6050 60  0000 C CNN
+F 1 "10k" H 4100 6250 60  0000 C CNN
+F 2 "RasperryLib:Resistor" H 4100 6150 60  0001 C CNN
+F 3 "" H 4100 6150 60  0001 C CNN
+	1    4100 6150
+	0    1    1    0   
+$EndComp
+$Comp
+L Resistor R3
+U 1 1 5BE90BEE
+P 9650 3050
+F 0 "R3" H 9650 2950 60  0000 C CNN
+F 1 "1k" H 9650 3150 60  0000 C CNN
+F 2 "RasperryLib:Resistor" H 9650 3050 60  0001 C CNN
+F 3 "" H 9650 3050 60  0001 C CNN
+	1    9650 3050
+	0    1    1    0   
+$EndComp
+$Comp
+L C C1
+U 1 1 5BE9EC66
+P 9300 3550
+F 0 "C1" H 9325 3650 50  0000 L CNN
+F 1 "10nF" H 9325 3450 50  0000 L CNN
+F 2 "RasperryLib:Capacitor_Small" H 9338 3400 50  0001 C CNN
+F 3 "" H 9300 3550 50  0001 C CNN
+	1    9300 3550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4200 3850 4550 3850
+Wire Wire Line
+	4550 3950 4200 3950
+Wire Wire Line
+	4550 4050 4200 4050
+Wire Wire Line
+	4550 4150 4200 4150
+Wire Wire Line
+	4550 4250 4200 4250
+Wire Wire Line
+	4550 4350 4200 4350
+Wire Wire Line
+	4200 4450 4550 4450
+Wire Wire Line
+	4550 4550 4200 4550
+Wire Wire Line
+	4200 4650 4550 4650
+Wire Wire Line
+	4550 4750 4200 4750
+Wire Wire Line
+	4200 4850 4550 4850
+Wire Wire Line
+	4550 4950 4200 4950
+Wire Wire Line
+	4550 5050 4200 5050
+Wire Wire Line
+	4550 5150 4200 5150
+Wire Wire Line
+	4550 5250 4200 5250
+Wire Wire Line
+	4550 5350 4200 5350
+Wire Wire Line
+	4550 5450 4200 5450
+Wire Wire Line
+	4550 5550 4200 5550
+Wire Wire Line
+	4200 5650 4550 5650
+Wire Wire Line
+	4550 5750 4200 5750
+Wire Wire Line
+	6150 3850 6150 3900
+Wire Wire Line
+	6150 3900 2600 3900
+Wire Wire Line
+	2600 3900 2600 3850
+Wire Wire Line
+	6150 3950 6150 4000
+Wire Wire Line
+	6150 4000 2600 4000
+Wire Wire Line
+	2600 4000 2600 3950
+Wire Wire Line
+	6150 4050 6150 4100
+Wire Wire Line
+	6150 4100 2600 4100
+Wire Wire Line
+	2600 4100 2600 4050
+Wire Wire Line
+	6150 4150 6150 4200
+Wire Wire Line
+	6150 4200 2600 4200
+Wire Wire Line
+	2600 4200 2600 4150
+Wire Wire Line
+	6150 4250 6150 4300
+Wire Wire Line
+	6150 4300 2600 4300
+Wire Wire Line
+	2600 4300 2600 4250
+Wire Wire Line
+	6150 4350 6150 4400
+Wire Wire Line
+	6150 4400 2600 4400
+Wire Wire Line
+	2600 4400 2600 4350
+Wire Wire Line
+	6150 4450 6150 4500
+Wire Wire Line
+	6150 4500 2600 4500
+Wire Wire Line
+	2600 4500 2600 4450
+Wire Wire Line
+	6150 4550 6150 4600
+Wire Wire Line
+	6150 4600 2600 4600
+Wire Wire Line
+	2600 4600 2600 4550
+Wire Wire Line
+	6150 4650 6150 4700
+Wire Wire Line
+	6150 4700 2600 4700
+Wire Wire Line
+	2600 4700 2600 4650
+Wire Wire Line
+	6150 4750 6150 4800
+Wire Wire Line
+	6150 4800 2600 4800
+Wire Wire Line
+	2600 4800 2600 4750
+Wire Wire Line
+	6150 4850 6150 4900
+Wire Wire Line
+	6150 4900 2600 4900
+Wire Wire Line
+	2600 4900 2600 4850
+Wire Wire Line
+	6150 4950 6150 5000
+Wire Wire Line
+	6150 5000 2600 5000
+Wire Wire Line
+	2600 5000 2600 4950
+Wire Wire Line
+	6150 5050 6150 5100
+Wire Wire Line
+	6150 5100 2600 5100
+Wire Wire Line
+	2600 5100 2600 5050
+Wire Wire Line
+	6150 5150 6150 5200
+Wire Wire Line
+	6150 5200 2600 5200
+Wire Wire Line
+	2600 5200 2600 5150
+Wire Wire Line
+	6150 5250 6150 5300
+Wire Wire Line
+	6150 5300 2600 5300
+Wire Wire Line
+	2600 5300 2600 5250
+Wire Wire Line
+	6150 5350 6150 5400
+Wire Wire Line
+	6150 5400 2600 5400
+Wire Wire Line
+	2600 5400 2600 5350
+Wire Wire Line
+	6150 5450 6150 5500
+Wire Wire Line
+	6150 5500 2600 5500
+Wire Wire Line
+	2600 5500 2600 5450
+Wire Wire Line
+	6150 5550 6150 5600
+Wire Wire Line
+	6150 5600 2600 5600
+Wire Wire Line
+	2600 5600 2600 5550
+Wire Wire Line
+	6150 5650 6150 5700
+Wire Wire Line
+	6150 5700 2600 5700
+Wire Wire Line
+	2600 5700 2600 5650
+Wire Wire Line
+	6150 5750 6150 5800
+Wire Wire Line
+	6150 5800 2600 5800
+Wire Wire Line
+	2600 5800 2600 5750
+Wire Wire Line
+	8950 5950 8950 5850
+Wire Wire Line
+	8950 5850 8650 5850
+Wire Wire Line
+	8650 5850 8650 5700
+Wire Wire Line
+	9150 5950 9150 5750
+Wire Wire Line
+	9150 5750 9950 5750
+Wire Wire Line
+	9450 5750 9450 5700
+Wire Wire Line
+	9350 5950 10100 5950
+Wire Wire Line
+	10100 5950 10100 5550
+Wire Wire Line
+	10100 5250 10050 5250
+Wire Wire Line
+	10050 5250 10050 4950
+Wire Wire Line
+	9950 5750 9950 4750
+Wire Wire Line
+	9950 4750 10050 4750
+Connection ~ 9450 5750
+Wire Wire Line
+	10150 3900 10150 3750
+Wire Wire Line
+	10650 3750 10800 3750
+Wire Wire Line
+	10800 3000 10800 3900
+Wire Notes Line
+	5950 3700 6350 3700
+Wire Notes Line
+	6350 3700 6350 5100
+Wire Notes Line
+	6350 5100 4450 5100
+Wire Notes Line
+	4450 5100 4450 3700
+Wire Notes Line
+	4450 3700 6000 3700
+Wire Wire Line
+	9150 3850 8850 3850
+Wire Wire Line
+	6150 3850 8550 3850
+Wire Wire Line
+	9450 3850 9300 3850
+Wire Wire Line
+	9300 3850 9300 4250
+Wire Wire Line
+	9300 4250 7150 4250
+Wire Wire Line
+	7150 4250 7150 4050
+Wire Wire Line
+	7150 4050 6150 4050
+Wire Wire Line
+	9150 3550 9150 3850
+Connection ~ 10150 3750
+Wire Wire Line
+	10800 3000 10150 3000
+Connection ~ 10800 3750
+Wire Wire Line
+	10150 3400 9450 3400
+Wire Wire Line
+	9450 3400 9450 3850
+Wire Wire Line
+	6700 3850 6700 5850
+Connection ~ 6700 3850
+Wire Wire Line
+	6900 5850 6900 4050
+Connection ~ 6900 4050
+Wire Wire Line
+	7400 5850 7400 3850
+Connection ~ 7400 3850
+Wire Wire Line
+	7600 5850 7600 4250
+Connection ~ 7600 4250
+Wire Wire Line
+	6800 5000 6700 5000
+Connection ~ 6700 5000
+Wire Wire Line
+	6800 5400 6800 5850
+Wire Wire Line
+	6150 5550 6800 5550
+Connection ~ 6800 5550
+Wire Wire Line
+	6150 5650 7500 5650
+Wire Wire Line
+	7500 5650 7500 5850
+Wire Wire Line
+	4350 3850 4350 6400
+Connection ~ 4350 3850
+Wire Wire Line
+	4450 5650 4450 6400
+Connection ~ 4450 5650
+Wire Wire Line
+	4350 5950 4100 5950
+Connection ~ 4350 5950
+Wire Wire Line
+	4100 6350 4450 6350
+Connection ~ 4450 6350
+Wire Wire Line
+	6150 5750 6350 5750
+Wire Wire Line
+	6350 5750 6350 6350
+Wire Wire Line
+	6350 6350 11100 6350
+Wire Wire Line
+	11100 6350 11100 2850
+Wire Wire Line
+	11100 2850 9650 2850
+Wire Wire Line
+	9650 3250 9850 3250
+Wire Wire Line
+	9850 3250 9850 3200
+Connection ~ 9450 3550
+$Comp
+L Buzzer_2 Bu1
+U 1 1 5BE9F2D6
+P 8100 5050
+F 0 "Bu1" H 8100 4750 60  0000 C CNN
+F 1 "Buzzer_2" H 8100 5350 60  0000 C CNN
+F 2 "RasperryLib:Buzzer1x2" H 8100 4850 60  0001 C CNN
+F 3 "" H 8100 4850 60  0001 C CNN
+	1    8100 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 4850 8100 3850
+Connection ~ 8100 3850
+$Comp
+L BC337 Q2
+U 1 1 5BE9F3DC
+P 8000 5550
+F 0 "Q2" H 8200 5625 50  0000 L CNN
+F 1 "BC337" H 8200 5550 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-92_Molded_Narrow" H 8200 5475 50  0001 L CIN
+F 3 "" H 8000 5550 50  0001 L CNN
+	1    8000 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 5250 8100 5350
+Wire Wire Line
+	8100 5750 8350 5750
+Wire Wire Line
+	8350 5750 8350 4250
+Connection ~ 8350 4250
+$Comp
+L Resistor R4
+U 1 1 5BE9F598
+P 7800 5250
+F 0 "R4" H 7800 5150 60  0000 C CNN
+F 1 "1k" H 7800 5350 60  0000 C CNN
+F 2 "RasperryLib:Resistor" H 7800 5250 60  0001 C CNN
+F 3 "" H 7800 5250 60  0001 C CNN
+	1    7800 5250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7800 5450 7800 5550
+Wire Wire Line
+	6150 5350 6500 5350
+Wire Wire Line
+	6500 5350 6500 4900
+Wire Wire Line
+	6500 4900 7800 4900
+Wire Wire Line
+	7800 4900 7800 5050
+Connection ~ 9150 3750
+Wire Wire Line
+	9550 3750 10250 3750
+Wire Wire Line
+	8400 3850 8400 3300
+Wire Wire Line
+	8400 3300 9550 3300
+Wire Wire Line
+	9550 3300 9550 3750
+Connection ~ 8400 3850
+Wire Wire Line
+	4550 6400 4550 6250
+Wire Wire Line
+	4550 6250 6600 6250
+Wire Wire Line
+	6600 6250 6600 4050
+Connection ~ 6600 4050
+$EndSCHEMATC
