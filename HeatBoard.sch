@@ -94,12 +94,12 @@ $EndComp
 $Comp
 L BC337 Q1
 U 1 1 5BE89444
-P 10050 3200
-F 0 "Q1" H 10250 3275 50  0000 L CNN
-F 1 "BC337" H 10250 3200 50  0000 L CNN
-F 2 "RasperryLib:BC337" H 10250 3125 50  0001 L CIN
-F 3 "" H 10050 3200 50  0001 L CNN
-	1    10050 3200
+P 10550 3200
+F 0 "Q1" H 10750 3275 50  0000 L CNN
+F 1 "BC337" H 10750 3200 50  0000 L CNN
+F 2 "RasperryLib:BC337" H 10750 3125 50  0001 L CIN
+F 3 "" H 10550 3200 50  0001 L CNN
+	1    10550 3200
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -151,12 +151,12 @@ Used by 3.5 inch LCD
 $Comp
 L Conn_small1x3 Co2
 U 1 1 5BE8BABB
-P 6800 5950
-F 0 "Co2" H 6800 5700 60  0000 C CNN
-F 1 "DHT22" H 6800 6150 60  0000 C CNN
-F 2 "RasperryLib:Conn_Small1x3" H 6800 5950 60  0001 C CNN
-F 3 "" H 6800 5950 60  0001 C CNN
-	1    6800 5950
+P 7050 5950
+F 0 "Co2" H 7050 5700 60  0000 C CNN
+F 1 "DHT22" H 7050 6150 60  0000 C CNN
+F 2 "RasperryLib:Conn_Small1x3" H 7050 5950 60  0001 C CNN
+F 3 "" H 7050 5950 60  0001 C CNN
+	1    7050 5950
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -173,13 +173,13 @@ $EndComp
 $Comp
 L Resistor R2
 U 1 1 5BE8E5B2
-P 6800 5200
-F 0 "R2" H 6800 5100 60  0000 C CNN
-F 1 "10k" H 6800 5300 60  0000 C CNN
-F 2 "RasperryLib:Resistor" H 6800 5200 60  0001 C CNN
-F 3 "" H 6800 5200 60  0001 C CNN
-	1    6800 5200
-	0    1    1    0   
+P 6250 5950
+F 0 "R2" H 6250 5850 60  0000 C CNN
+F 1 "10k" H 6250 6050 60  0000 C CNN
+F 2 "RasperryLib:Resistor" H 6250 5950 60  0001 C CNN
+F 3 "" H 6250 5950 60  0001 C CNN
+	1    6250 5950
+	1    0    0    -1  
 $EndComp
 $Comp
 L Conn_small1x3 Co1
@@ -206,13 +206,13 @@ $EndComp
 $Comp
 L Resistor R3
 U 1 1 5BE90BEE
-P 9650 3050
-F 0 "R3" H 9650 2950 60  0000 C CNN
-F 1 "1k" H 9650 3150 60  0000 C CNN
-F 2 "RasperryLib:Resistor" H 9650 3050 60  0001 C CNN
-F 3 "" H 9650 3050 60  0001 C CNN
-	1    9650 3050
-	0    1    1    0   
+P 10100 3200
+F 0 "R3" H 10100 3100 60  0000 C CNN
+F 1 "1k" H 10100 3300 60  0000 C CNN
+F 2 "RasperryLib:Resistor" H 10100 3200 60  0001 C CNN
+F 3 "" H 10100 3200 60  0001 C CNN
+	1    10100 3200
+	1    0    0    -1  
 $EndComp
 $Comp
 L C C1
@@ -223,6 +223,39 @@ F 1 "10nF" H 9325 3450 50  0000 L CNN
 F 2 "RasperryLib:Capacitor_Small" H 9338 3400 50  0001 C CNN
 F 3 "" H 9300 3550 50  0001 C CNN
 	1    9300 3550
+	0    1    1    0   
+$EndComp
+$Comp
+L Buzzer_2 Bu1
+U 1 1 5BE9F2D6
+P 8100 5050
+F 0 "Bu1" H 8100 4750 60  0000 C CNN
+F 1 "Buzzer_2" H 8100 5350 60  0000 C CNN
+F 2 "RasperryLib:Buzzer1x2" H 8100 4850 60  0001 C CNN
+F 3 "" H 8100 4850 60  0001 C CNN
+	1    8100 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L BC337 Q2
+U 1 1 5BE9F3DC
+P 8000 5550
+F 0 "Q2" H 8200 5625 50  0000 L CNN
+F 1 "BC337" H 8200 5550 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-92_Molded_Narrow" H 8200 5475 50  0001 L CIN
+F 3 "" H 8000 5550 50  0001 L CNN
+	1    8000 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Resistor R4
+U 1 1 5BE9F598
+P 7800 5250
+F 0 "R4" H 7800 5150 60  0000 C CNN
+F 1 "1k" H 7800 5350 60  0000 C CNN
+F 2 "RasperryLib:Resistor" H 7800 5250 60  0001 C CNN
+F 3 "" H 7800 5250 60  0001 C CNN
+	1    7800 5250
 	0    1    1    0   
 $EndComp
 Wire Wire Line
@@ -364,7 +397,7 @@ Wire Wire Line
 Wire Wire Line
 	6150 5450 6150 5500
 Wire Wire Line
-	6550 5500 2600 5500
+	2600 5500 6550 5500
 Wire Wire Line
 	2600 5500 2600 5450
 Wire Wire Line
@@ -437,25 +470,19 @@ Wire Wire Line
 Wire Wire Line
 	9300 4250 7150 4250
 Wire Wire Line
-	7150 4250 7150 4050
+	7150 4050 7150 5850
 Wire Wire Line
-	7150 4050 6150 4050
+	6150 4050 7150 4050
 Wire Wire Line
 	9150 3550 9150 3850
 Connection ~ 10150 3750
-Wire Wire Line
-	10800 3000 10150 3000
 Connection ~ 10800 3750
-Wire Wire Line
-	10150 3400 9450 3400
 Wire Wire Line
 	9450 3400 9450 3850
 Wire Wire Line
-	6700 3850 6700 5850
-Connection ~ 6700 3850
-Wire Wire Line
-	6900 5850 6900 4050
-Connection ~ 6900 4050
+	6950 3850 6950 5850
+Connection ~ 6950 3850
+Connection ~ 7150 4050
 Wire Wire Line
 	7400 5850 7400 3850
 Connection ~ 7400 3850
@@ -463,10 +490,9 @@ Wire Wire Line
 	7600 5850 7600 4250
 Connection ~ 7600 4250
 Wire Wire Line
-	6800 5000 6700 5000
-Connection ~ 6700 5000
+	6800 5550 6800 5950
 Wire Wire Line
-	6800 5400 6800 5850
+	6800 5850 7050 5850
 Wire Wire Line
 	6150 5550 6800 5550
 Connection ~ 6800 5550
@@ -481,43 +507,15 @@ Wire Wire Line
 	4450 5650 4450 6400
 Connection ~ 4450 5650
 Wire Wire Line
-	4350 5950 4100 5950
+	4100 5950 6050 5950
 Connection ~ 4350 5950
 Wire Wire Line
 	4100 6350 4450 6350
 Connection ~ 4450 6350
-Wire Wire Line
-	6150 5750 6350 5750
-Wire Wire Line
-	9650 3250 9850 3250
-Wire Wire Line
-	9850 3250 9850 3200
 Connection ~ 9450 3550
-$Comp
-L Buzzer_2 Bu1
-U 1 1 5BE9F2D6
-P 8100 5050
-F 0 "Bu1" H 8100 4750 60  0000 C CNN
-F 1 "Buzzer_2" H 8100 5350 60  0000 C CNN
-F 2 "RasperryLib:Buzzer1x2" H 8100 4850 60  0001 C CNN
-F 3 "" H 8100 4850 60  0001 C CNN
-	1    8100 5050
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	8100 4850 8100 3850
 Connection ~ 8100 3850
-$Comp
-L BC337 Q2
-U 1 1 5BE9F3DC
-P 8000 5550
-F 0 "Q2" H 8200 5625 50  0000 L CNN
-F 1 "BC337" H 8200 5550 50  0000 L CNN
-F 2 "TO_SOT_Packages_THT:TO-92_Molded_Narrow" H 8200 5475 50  0001 L CIN
-F 3 "" H 8000 5550 50  0001 L CNN
-	1    8000 5550
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	8100 5250 8100 5350
 Wire Wire Line
@@ -525,17 +523,6 @@ Wire Wire Line
 Wire Wire Line
 	8350 5750 8350 4250
 Connection ~ 8350 4250
-$Comp
-L Resistor R4
-U 1 1 5BE9F598
-P 7800 5250
-F 0 "R4" H 7800 5150 60  0000 C CNN
-F 1 "1k" H 7800 5350 60  0000 C CNN
-F 2 "RasperryLib:Resistor" H 7800 5250 60  0001 C CNN
-F 3 "" H 7800 5250 60  0001 C CNN
-	1    7800 5250
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	7800 5450 7800 5550
 Wire Wire Line
@@ -563,9 +550,19 @@ Wire Wire Line
 Wire Wire Line
 	6600 6250 6600 4050
 Connection ~ 6600 4050
-Wire Wire Line
-	6550 2850 6550 5500
-Wire Wire Line
-	6550 2850 9650 2850
 Connection ~ 6150 5500
+Connection ~ 6800 5850
+Wire Wire Line
+	6800 5950 6450 5950
+Connection ~ 7150 4250
+Wire Wire Line
+	6550 5500 6550 3200
+Wire Wire Line
+	6550 3200 9900 3200
+Wire Wire Line
+	10300 3200 10350 3200
+Wire Wire Line
+	10650 3400 9450 3400
+Wire Wire Line
+	10800 3000 10650 3000
 $EndSCHEMATC
