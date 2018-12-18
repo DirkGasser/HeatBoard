@@ -397,7 +397,7 @@ Wire Wire Line
 Wire Wire Line
 	6150 5450 6150 5500
 Wire Wire Line
-	2600 5500 6550 5500
+	6150 5500 2600 5500
 Wire Wire Line
 	2600 5500 2600 5450
 Wire Wire Line
@@ -427,7 +427,7 @@ Wire Wire Line
 Wire Wire Line
 	9150 5950 9150 5750
 Wire Wire Line
-	9150 5750 9950 5750
+	9950 5750 9150 5750
 Wire Wire Line
 	9450 5750 9450 5700
 Wire Wire Line
@@ -439,7 +439,7 @@ Wire Wire Line
 Wire Wire Line
 	10050 5250 10050 4950
 Wire Wire Line
-	9950 5750 9950 4750
+	9950 4700 9950 5750
 Wire Wire Line
 	9950 4750 10050 4750
 Connection ~ 9450 5750
@@ -490,16 +490,7 @@ Wire Wire Line
 	7600 5850 7600 4250
 Connection ~ 7600 4250
 Wire Wire Line
-	6800 5550 6800 5950
-Wire Wire Line
 	6800 5850 7050 5850
-Wire Wire Line
-	6150 5550 6800 5550
-Connection ~ 6800 5550
-Wire Wire Line
-	6150 5650 7500 5650
-Wire Wire Line
-	7500 5650 7500 5850
 Wire Wire Line
 	4350 3850 4350 6400
 Connection ~ 4350 3850
@@ -526,9 +517,7 @@ Connection ~ 8350 4250
 Wire Wire Line
 	7800 5450 7800 5550
 Wire Wire Line
-	6150 5350 6500 5350
-Wire Wire Line
-	6500 5350 6500 4900
+	6500 4900 6500 5550
 Wire Wire Line
 	6500 4900 7800 4900
 Wire Wire Line
@@ -550,19 +539,40 @@ Wire Wire Line
 Wire Wire Line
 	6600 6250 6600 4050
 Connection ~ 6600 4050
-Connection ~ 6150 5500
 Connection ~ 6800 5850
 Wire Wire Line
 	6800 5950 6450 5950
 Connection ~ 7150 4250
-Wire Wire Line
-	6550 5500 6550 3200
-Wire Wire Line
-	6550 3200 9900 3200
 Wire Wire Line
 	10300 3200 10350 3200
 Wire Wire Line
 	10650 3400 9450 3400
 Wire Wire Line
 	10800 3000 10650 3000
+Wire Wire Line
+	6400 3200 6400 5350
+Wire Wire Line
+	6400 3200 9900 3200
+Wire Wire Line
+	6150 5750 7500 5750
+Wire Wire Line
+	7500 5750 7500 5850
+Wire Wire Line
+	6150 5650 6800 5650
+Wire Wire Line
+	6800 5650 6800 5950
+Wire Wire Line
+	6500 5550 6150 5550
+Wire Wire Line
+	6400 5350 6150 5350
+Wire Wire Line
+	10900 4950 10900 5150
+Wire Wire Line
+	10900 5150 10050 5150
+Connection ~ 10050 5150
+Wire Wire Line
+	9950 4700 10900 4700
+Wire Wire Line
+	10900 4700 10900 4750
+Connection ~ 9950 4750
 $EndSCHEMATC
